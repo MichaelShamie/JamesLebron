@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UN SDG 16.10 - Press Freedom & Human Rights Defenders</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #f4f4f4, #eaeaea);
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-top: 5px solid #f39c12;
+            transition: all 0.3s ease-in-out;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-in forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #666;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        nav a:hover, nav a:target {
+            background-color: #f39c12;
+            transform: scale(1.1);
+        }
+        section {
+            display: none;
+            padding: 20px;
+            margin: 15px auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: opacity 0.5s ease-in-out;
+            max-width: 800px;
+            opacity: 0;
+        }
+        section:target {
+            display: block;
+            opacity: 1;
+        }
+        .stats-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .stats-card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .stats-card:hover {
+            transform: scale(1.05);
+        }
+        a {
+            position: relative;
+        }
+        a::after {
+            content: '';
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: #f39c12;
+            transform: scaleX(0);
+            transition: transform 0.3s ease-in-out;
+        }
+        a:hover::after {
+            transform: scaleX(1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>UN SDG 16.10 - Protecting Journalists & Human Rights Defenders</h1>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#cases">Real Cases</a>
+    <a href="#stats">Statistics</a>
+    <a href="#resources">Resources</a>
+</nav>
+
+<section id="about">
+    <h2>About SDG 16.10</h2>
+    <p>SDG 16.10 aims to ensure public access to information and protect fundamental freedoms, in accordance with national legislation and international agreements.</p>
+    <p>Every year, dozens of journalists and human rights defenders are killed or go missing while exposing corruption and injustice.</p>
+</section>
+
+<section id="cases">
+    <h2>Real Cases</h2>
+    <p>According to <a href="https://rsf.org/" target="_blank">Reporters Without Borders</a>, over 50 journalists were killed in 2023 alone.</p>
+    <p>One notable case is <strong>Jamal Khashoggi</strong>, a Saudi journalist murdered in 2018 for his critical reporting on the Saudi government.</p>
+</section>
+
+<section id="stats">
+    <h2>Statistics</h2>
+    <div class="stats-container">
+        <div class="stats-card">
+            <h3>1,500+</h3>
+            <p>Journalists killed since 1992</p>
+        </div>
+        <div class="stats-card">
+            <h3>Mexico</h3>
+            <p>Most dangerous country for journalists</p>
+        </div>
+        <div class="stats-card">
+            <h3>50+</h3>
+            <p>Journalists killed in 2023</p>
+        </div>
+    </div>
+</section>
+
+<section id="resources">
+    <h2>Resources</h2>
+    <p>For more information and ways to take action, visit:</p>
+    <ul>
+        <li><a href="https://www.un.org/sustainabledevelopment/peace-justice/" target="_blank">UN SDG 16</a></li>
+        <li><a href="https://rsf.org/" target="_blank">Reporters Without Borders</a></li>
+        <li><a href="https://cpj.org/" target="_blank">Committee to Protect Journalists</a></li>
+    </ul>
+</section>
+
+<footer>
+    <p>&copy; 2025 UN SDG 16.10 Awareness Project</p>
+</footer>
+
+</body>
+</html>
+
+
+
